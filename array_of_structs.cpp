@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-struct TempatureRecord {
+struct TemperatureRecord {
     int day;
     int tempature;                                                      // TODO: Step 1 - Define the struct TemperatureRecord
 };                                                               // It should contain two integer fields: day and temperature.
@@ -23,7 +23,9 @@ TemperatureRecord findMax(const ???);
 double findAverage(const ???);
 
 int main() {
-    // TODO: Step 2 - Declare an array of TemperatureRecord structs (MAX_DAYS size)
+ 
+    
+    TemperatureRecord days[31];                                                 // TODO: Step 2 - Declare an array of TemperatureRecord structs (MAX_DAYS size)
     
     int size = 0;  // Actual number of records read
 
