@@ -2,6 +2,10 @@
 #include <fstream>
 using namespace std;
 
+//Ryan Esparza
+
+
+
 // TODO: Step 1 - Define the struct TemperatureRecord
 // It should contain two integer fields: day and temperature.
 
