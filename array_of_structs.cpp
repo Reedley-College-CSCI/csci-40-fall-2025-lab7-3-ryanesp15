@@ -25,7 +25,7 @@ void readTemperatures(TemperatureRecord[], int& size);                          
 void printTemperatures(const TemperatureRecord records[], int size);
 TemperatureRecord findMin(const ???);
 TemperatureRecord findMax(const ???);
-double findAverage(const ???);
+double findAverage(const TemperatureRecord records[], int size);
 
 int main() {
 
@@ -37,6 +37,11 @@ int main() {
     printTemperatures(days, numRecords);                                                            // TODO: Step 4 - Print the temperatures
 
     // TODO: Step 5 - Compute and display min, max, and average temperature
+    double averageTemp = 0.0;
+
+    averageTemp = findAverage(days, numRecords);
+
+    cout << "Average Temperature: " << averageTemp << endl;
 
     return 0;
 }
@@ -86,3 +91,15 @@ void printTemperatures(const TemperatureRecord records[], int size) {
 
 // TODO: Step 10 - Implement findAverage()
 // Compute and return the average temperature
+double findAverage(const TemperatureRecord records[], int size) {
+
+    if (size == 0) {
+        return 0.0;
+    }
+    double sum = 0.0;
+
+    for (int i = 0; i < size; i++) {
+        sum += records[i].temperature;
+    }
+    return sum / size;
+}
