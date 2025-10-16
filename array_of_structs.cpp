@@ -29,12 +29,13 @@ double findAverage(const TemperatureRecord records[], int size);
 
 int main() {
 
-
-    readTemperatures(days, numRecords);                                // TODO: Step 3 - Call readTemperatures() to load data from file
+    // TODO: Step 3 - Call readTemperatures() to load data from file
+    readTemperatures(days, numRecords);                                
 
     cout << "Displaying Temperature Records:" << endl;
 
-    printTemperatures(days, numRecords);                                                            // TODO: Step 4 - Print the temperatures
+    // TODO: Step 4 - Print the temperatures
+    printTemperatures(days, numRecords);                                                            
 
     // TODO: Step 5 - Compute and display min, max, and average temperature
     double averageTemp = 0.0;
@@ -46,8 +47,10 @@ int main() {
     return 0;
 }
 
-void readTemperatures(TemperatureRecord records[], int& size) {                     // TODO: Step 6 - Implement readTemperatures()
-                                                                                    // Read from "temps.txt" and store data in the array
+// TODO: Step 6 - Implement readTemperatures()
+// Read from "temps.txt" and store data in the array
+
+void readTemperatures(TemperatureRecord records[], int& size) {                     
 
     ifstream inputFile("temps.txt");
 
